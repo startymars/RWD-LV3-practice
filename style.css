@@ -1,0 +1,350 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+	
+}
+
+
+.ml-64{
+	margin-left: 64px;
+}
+
+.mb-8{
+	margin-bottom: 8px;
+}
+
+.mb-24{
+	margin-bottom: 24px;
+}
+
+.mb-32{
+	margin-bottom: 32px;
+}
+
+.mb-80{
+	margin-bottom: 80px;
+}
+
+.mr-32{
+	margin-right: 32px;
+}
+
+.mr-48{
+	margin-right: 48px;
+}
+
+.mb-35{
+	margin-bottom: 35px;
+}
+
+.mt-48{
+	margin-top: 48px;
+}
+
+.mt-60{
+	margin-top: 60px;
+}
+
+.pl-16{
+	padding-left: 16px;
+}
+
+.pb-32{
+	padding-bottom: 32px;
+}
+
+.pt-32{
+	padding-top: 32px;
+}
+
+.mt-96{
+	margin-top: 96px;
+}
+
+.font-weight-bold{
+	font-weight: bold;
+}
+
+
+body{
+	font-size: 24px;
+	line-height: 1.5;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+	
+}
+
+img{
+	max-width:100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+a{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+}
+
+.container{
+	max-width:1200px;
+	margin: 0 auto;
+	padding: 0px 12px;
+}
+
+
+.header{
+	background-color:#AA0601;
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	padding: 5px 20px;
+}
+
+h1{
+padding-left: 80px;
+}
+
+h1 img{
+	width: 80px;
+}
+
+.header-menu{
+	
+	display: flex;
+	justify-content: center;
+	font-size: 16px;
+	color:white;
+}
+
+.header-menu .menu{
+	padding: 20px;
+}
+
+
+.header-menu a{
+	color: white;
+}
+
+
+@media(max-width:992px){
+	.header{	
+		padding:10px 30px;
+	}
+
+}
+
+
+@media(max-width:767px){
+	.header{
+		display: flex;
+		flex-direction: column;
+		padding: 0px;
+	}
+
+	h1{
+		padding: 20px;
+	}
+	.header-menu{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.header-menu .menu{
+		margin: 0px;
+		width: 50%;
+		padding: 15px 0px;
+		border:1px solid white;
+		text-align: center;
+
+	} 
+
+}
+
+
+
+.question h2{
+	font-size: 48px;
+	border-left: 10px solid #9F1213;
+}
+
+.question .question-detail{
+	font-size: 20px;
+}
+
+.question .answer{
+	width: 856px;
+	font-size: 16px;
+}
+
+@media(max-width:992px){
+	.question .answer{
+		width: 696px;
+	}
+
+	.question h2{
+		font-size: 48px;
+		margin-top: 80px;
+	}
+	
+}
+
+@media(max-width:767px){
+	.question .answer{
+		width:348px;
+	}
+}
+
+.footer{
+	background-color: #AA0601;
+	color: white;
+	padding-left:80px;
+	padding-right: 80px;
+}
+
+.footer-top{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	border-bottom: 1px solid white;
+}
+
+.footer-menu{
+	display: flex;
+	font-size: 16px;
+
+}
+
+.footer-icon{
+	font-size: 36px;
+}
+
+.right-icon{
+	display: flex;
+}
+
+.right-icon img{
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+}
+
+
+.footer-bottom{
+	display:flex;
+	justify-content: space-between;
+}
+
+.policy{
+	display: flex;
+	font-size: 14px;
+}
+
+.copy-right{
+	font-size: 16px;
+}
+
+.material-symbols-outlined{
+	display: inline-block;
+}
+
+@media(max-width:992px){
+	.footer{
+		padding-left:50px;
+		padding-right: 50px;
+	}
+
+	.right-icon li{
+		margin-right: 16px;
+	}
+	
+}
+
+@media(max-width:767px){
+	.footer-menu{
+		display: none;
+	}	
+	.footer-icon{
+		font-size: 16px;
+		margin-top: 24px;
+		padding-bottom: -8px;
+	}
+
+	.contact-icon{
+		margin-top: 24px;
+	}
+	.footer-bottom{
+		display:flex;
+		flex-direction: column;
+	}
+
+	.copy-right{
+		padding: 0px;
+		padding-top: 16px;
+		
+	}
+
+	.policy{
+		padding: 0px;	
+		padding-bottom: 24px;
+		display: flex;
+		flex-direction: column;
+		font-size: 16px;
+	}
+
+	.policy li{
+		padding-top: 8px;
+	
+	}
+}
+
+
+
