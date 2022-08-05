@@ -117,7 +117,7 @@ table {
 body{
 	font-size: 24px;
 	line-height: 1.5;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", "Roboto", "Helvetica Neue", Arial, sans-serif;
 	
 }
 
@@ -133,15 +133,18 @@ a{
 	color: white;
 }
 
+
 .container{
-	max-width:1200px;
+	max-width:1320px;
 	margin: 0 auto;
 	padding: 0px 12px;
 }
 
+header{
+	background-color:#AA0601;
+}
 
 .header{
-	background-color:#AA0601;
 	display: flex;
 	justify-content:space-between;
 	align-items: center;
@@ -164,13 +167,15 @@ h1 img{
 	color:white;
 }
 
-.header-menu .menu{
-	padding: 20px;
-}
 
 
 .header-menu a{
+	padding: 20px;
 	color: white;
+}
+
+a:hover{
+	color:black;
 }
 
 
@@ -221,15 +226,10 @@ h1 img{
 }
 
 .question .answer{
-	width: 856px;
 	font-size: 16px;
 }
 
 @media(max-width:992px){
-	.question .answer{
-		width: 696px;
-	}
-
 	.question h2{
 		font-size: 48px;
 		margin-top: 80px;
@@ -237,11 +237,7 @@ h1 img{
 	
 }
 
-@media(max-width:767px){
-	.question .answer{
-		width:348px;
-	}
-}
+
 
 .footer{
 	background-color: #AA0601;
@@ -277,7 +273,6 @@ h1 img{
 	height: 48px;
 }
 
-
 .footer-bottom{
 	display:flex;
 	justify-content: space-between;
@@ -293,7 +288,7 @@ h1 img{
 }
 
 .material-symbols-outlined{
-	display: inline-block;
+	font-size: 72px;
 }
 
 @media(max-width:992px){
@@ -305,6 +300,12 @@ h1 img{
 	.right-icon li{
 		margin-right: 16px;
 	}
+
+	.right-icon img{
+		width: 40px;
+		height: 40px;
+	}
+	
 	
 }
 
@@ -321,6 +322,12 @@ h1 img{
 	.contact-icon{
 		margin-top: 24px;
 	}
+
+	.right-icon img{
+		width: 24px;
+		height: 24px;
+	}
+
 	.footer-bottom{
 		display:flex;
 		flex-direction: column;
